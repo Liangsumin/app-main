@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.xuexiang.xui.widget.imageview.RadiusImageView
+            android:id="@+id/iv_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/xui_ic_default_img"
+            app:riv_border_width="0dp"
+            app:riv_corner_radius="5dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/TextStyle.Content"
+                android:ellipsize="end"
+                android:gravity="start|center_vertical"
+                android:maxLines="1"
+                android:singleLine="false"
+                android:text="常用知识集"
+                android:textColor="@color/xui_config_color_pure_black" />
+
+            <TextView
+                android:id="@+id/tv_summary"
+                style="@style/TextStyle.Explain"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:gravity="start|center_vertical"
+                android:maxLines="1"
+                android:singleLine="false"
+                android:text="11条知识, by 狐萝卜别卷了"
+                android:textColor="?attr/xui_config_color_content_text" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

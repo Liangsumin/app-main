@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="32dp"
+    android:orientation="vertical"
+    android:background="@drawable/popupwindow_bg">
+
+    <TextView
+        android:id="@+id/popupText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="默认内容"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp"
+        android:textColor="#2F2F2F"
+        android:textSize="15dp">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#96D5D5D5"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        ></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/copy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/copy">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginStart="16dp"
+            android:gravity="center_vertical"
+            android:textColor="#2F2F2F"
+            android:textSize="15dp"
+            android:text="复制"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/delete">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginStart="16dp"
+            android:gravity="center_vertical"
+            android:textColor="#2F2F2F"
+            android:textSize="15dp"
+            android:text="删除"></TextView>
+
+    </LinearLayout>
+
+</LinearLayout>

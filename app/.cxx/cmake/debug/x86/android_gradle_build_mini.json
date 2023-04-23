@@ -1,0 +1,19 @@
+{
+  "buildFiles": [
+    "D:\\Android\\Sdk\\ndk\\20.0.5594570\\build\\cmake\\android.toolchain.cmake",
+    "D:\\Android\\Sdk\\ndk\\20.0.5594570\\build\\cmake\\platforms.cmake",
+    "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "D:\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\fish\\new\\app-main\\app\\.cxx\\cmake\\debug\\x86\" clean"
+  ],
+  "buildTargetsCommand": "D:\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"D:\\fish\\new\\app-main\\app\\.cxx\\cmake\\debug\\x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "PinyinIme-Debug-x86": {
+      "artifactName": "PinyinIme",
+      "buildCommand": "D:\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\fish\\new\\app-main\\app\\.cxx\\cmake\\debug\\x86\" PinyinIme",
+      "abi": "x86",
+      "output": "D:\\fish\\new\\app-main\\app\\build\\intermediates\\cmake\\debug\\obj\\x86\\libPinyinIme.so"
+    }
+  }
+}

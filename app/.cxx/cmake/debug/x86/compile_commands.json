@@ -1,0 +1,103 @@
+[
+{
+  "directory": "D:/fish/new/app-main/app/.cxx/cmake/debug/x86",
+  "command": "D:\\Android\\Sdk\\ndk\\20.0.5594570\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DPinyinIme_EXPORTS -I/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\PinyinIme.dir\\android\\com_android_inputmethod_pinyin_PinyinDecoderService.cpp.o -c D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\android\\com_android_inputmethod_pinyin_PinyinDecoderService.cpp",
+  "file": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\android\\com_android_inputmethod_pinyin_PinyinDecoderService.cpp"
+},
+
+{
+  "directory": "D:/fish/new/app-main/app/.cxx/cmake/debug/x86",
+  "command": "D:\\Android\\Sdk\\ndk\\20.0.5594570\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DPinyinIme_EXPORTS -I/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\PinyinIme.dir\\share\\dictbuilder.cpp.o -c D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\dictbuilder.cpp",
+  "file": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\dictbuilder.cpp"
+},
+
+{
+  "directory": "D:/fish/new/app-main/app/.cxx/cmake/debug/x86",
+  "command": "D:\\Android\\Sdk\\ndk\\20.0.5594570\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DPinyinIme_EXPORTS -I/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\PinyinIme.dir\\share\\dictlist.cpp.o -c D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\dictlist.cpp",
+  "file": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\dictlist.cpp"
+},
+
+{
+  "directory": "D:/fish/new/app-main/app/.cxx/cmake/debug/x86",
+  "command": "D:\\Android\\Sdk\\ndk\\20.0.5594570\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DPinyinIme_EXPORTS -I/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\PinyinIme.dir\\share\\dicttrie.cpp.o -c D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\dicttrie.cpp",
+  "file": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\dicttrie.cpp"
+},
+
+{
+  "directory": "D:/fish/new/app-main/app/.cxx/cmake/debug/x86",
+  "command": "D:\\Android\\Sdk\\ndk\\20.0.5594570\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DPinyinIme_EXPORTS -I/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\PinyinIme.dir\\share\\lpicache.cpp.o -c D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\lpicache.cpp",
+  "file": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\lpicache.cpp"
+},
+
+{
+  "directory": "D:/fish/new/app-main/app/.cxx/cmake/debug/x86",
+  "command": "D:\\Android\\Sdk\\ndk\\20.0.5594570\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DPinyinIme_EXPORTS -I/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\PinyinIme.dir\\share\\matrixsearch.cpp.o -c D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\matrixsearch.cpp",
+  "file": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\matrixsearch.cpp"
+},
+
+{
+  "directory": "D:/fish/new/app-main/app/.cxx/cmake/debug/x86",
+  "command": "D:\\Android\\Sdk\\ndk\\20.0.5594570\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DPinyinIme_EXPORTS -I/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\PinyinIme.dir\\share\\mystdlib.cpp.o -c D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\mystdlib.cpp",
+  "file": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\mystdlib.cpp"
+},
+
+{
+  "directory": "D:/fish/new/app-main/app/.cxx/cmake/debug/x86",
+  "command": "D:\\Android\\Sdk\\ndk\\20.0.5594570\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DPinyinIme_EXPORTS -I/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\PinyinIme.dir\\share\\ngram.cpp.o -c D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\ngram.cpp",
+  "file": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\ngram.cpp"
+},
+
+{
+  "directory": "D:/fish/new/app-main/app/.cxx/cmake/debug/x86",
+  "command": "D:\\Android\\Sdk\\ndk\\20.0.5594570\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DPinyinIme_EXPORTS -I/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\PinyinIme.dir\\share\\pinyinime.cpp.o -c D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\pinyinime.cpp",
+  "file": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\pinyinime.cpp"
+},
+
+{
+  "directory": "D:/fish/new/app-main/app/.cxx/cmake/debug/x86",
+  "command": "D:\\Android\\Sdk\\ndk\\20.0.5594570\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DPinyinIme_EXPORTS -I/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\PinyinIme.dir\\share\\searchutility.cpp.o -c D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\searchutility.cpp",
+  "file": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\searchutility.cpp"
+},
+
+{
+  "directory": "D:/fish/new/app-main/app/.cxx/cmake/debug/x86",
+  "command": "D:\\Android\\Sdk\\ndk\\20.0.5594570\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DPinyinIme_EXPORTS -I/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\PinyinIme.dir\\share\\spellingtable.cpp.o -c D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\spellingtable.cpp",
+  "file": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\spellingtable.cpp"
+},
+
+{
+  "directory": "D:/fish/new/app-main/app/.cxx/cmake/debug/x86",
+  "command": "D:\\Android\\Sdk\\ndk\\20.0.5594570\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DPinyinIme_EXPORTS -I/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\PinyinIme.dir\\share\\spellingtrie.cpp.o -c D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\spellingtrie.cpp",
+  "file": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\spellingtrie.cpp"
+},
+
+{
+  "directory": "D:/fish/new/app-main/app/.cxx/cmake/debug/x86",
+  "command": "D:\\Android\\Sdk\\ndk\\20.0.5594570\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DPinyinIme_EXPORTS -I/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\PinyinIme.dir\\share\\splparser.cpp.o -c D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\splparser.cpp",
+  "file": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\splparser.cpp"
+},
+
+{
+  "directory": "D:/fish/new/app-main/app/.cxx/cmake/debug/x86",
+  "command": "D:\\Android\\Sdk\\ndk\\20.0.5594570\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DPinyinIme_EXPORTS -I/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\PinyinIme.dir\\share\\userdict.cpp.o -c D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\userdict.cpp",
+  "file": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\userdict.cpp"
+},
+
+{
+  "directory": "D:/fish/new/app-main/app/.cxx/cmake/debug/x86",
+  "command": "D:\\Android\\Sdk\\ndk\\20.0.5594570\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DPinyinIme_EXPORTS -I/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\PinyinIme.dir\\share\\utf16char.cpp.o -c D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\utf16char.cpp",
+  "file": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\utf16char.cpp"
+},
+
+{
+  "directory": "D:/fish/new/app-main/app/.cxx/cmake/debug/x86",
+  "command": "D:\\Android\\Sdk\\ndk\\20.0.5594570\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DPinyinIme_EXPORTS -I/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\PinyinIme.dir\\share\\utf16reader.cpp.o -c D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\utf16reader.cpp",
+  "file": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\utf16reader.cpp"
+},
+
+{
+  "directory": "D:/fish/new/app-main/app/.cxx/cmake/debug/x86",
+  "command": "D:\\Android\\Sdk\\ndk\\20.0.5594570\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DPinyinIme_EXPORTS -I/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\PinyinIme.dir\\share\\sync.cpp.o -c D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\sync.cpp",
+  "file": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\sync.cpp"
+}
+]

@@ -1,0 +1,21 @@
+# ninja log v5
+0	22	0	clean	21d1354076d053c9
+0	28	0	clean	21d1354076d053c9
+1	587	703932998	CMakeFiles/PinyinIme.dir/android/com_android_inputmethod_pinyin_PinyinDecoderService.cpp.o	2ab7dea48dbfd1ae
+11	589	703932998	CMakeFiles/PinyinIme.dir/share/dictlist.cpp.o	3a8278e55c5e2c2e
+23	590	703932998	CMakeFiles/PinyinIme.dir/share/dictbuilder.cpp.o	205a7ee7bc27353e
+37	592	703932998	CMakeFiles/PinyinIme.dir/share/matrixsearch.cpp.o	b4ab8a7dab3bfaae
+52	593	703932998	CMakeFiles/PinyinIme.dir/share/mystdlib.cpp.o	f6ffb427ab2546c3
+76	595	703932998	CMakeFiles/PinyinIme.dir/share/dicttrie.cpp.o	fddf3755edb8af1e
+112	596	703932998	CMakeFiles/PinyinIme.dir/share/lpicache.cpp.o	ef87434a72b00c0a
+150	597	703932998	CMakeFiles/PinyinIme.dir/share/ngram.cpp.o	bc226a7673c2ff46
+180	597	703932998	CMakeFiles/PinyinIme.dir/share/pinyinime.cpp.o	ae6ac9d2ec76448
+197	609	703932998	CMakeFiles/PinyinIme.dir/share/utf16reader.cpp.o	d97579edd22360d
+224	610	703932998	CMakeFiles/PinyinIme.dir/share/searchutility.cpp.o	c0412f8f24d719c3
+252	640	703932998	CMakeFiles/PinyinIme.dir/share/spellingtable.cpp.o	35c13f933cc33012
+280	654	703932998	CMakeFiles/PinyinIme.dir/share/spellingtrie.cpp.o	b534404fad17b99c
+467	661	703932998	CMakeFiles/PinyinIme.dir/share/splparser.cpp.o	2f036d9775640870
+515	674	703932998	CMakeFiles/PinyinIme.dir/share/utf16char.cpp.o	1b4a58d4e2ef350
+561	716	703932998	CMakeFiles/PinyinIme.dir/share/sync.cpp.o	7c3e1b93dd23f85d
+547	828	703932998	CMakeFiles/PinyinIme.dir/share/userdict.cpp.o	c60da0039eec85a8
+828	1148	703932999	D:/fish/new/app-main/app/build/intermediates/cmake/debug/obj/x86/libPinyinIme.so	7fb4f26bf95cb42a

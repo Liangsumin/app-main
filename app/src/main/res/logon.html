@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页</title>
+</head>
+<link rel="stylesheet" href="../res/css/sin.css">
+
+<body>
+    <div class="logo">
+        <img src="../res/img/wrong.png" alt="">
+    </div>
+    <div class="title">
+        注册
+    </div>
+    <div class="import">
+        <div class="ipt">
+            <div class="ipttext">用户名</div>
+            <div class="inipt"><input type="text" placeholder="请填写用户名" id="name"></div>
+        </div>
+        <div class="ipt">
+            <div class="ipttext">账号</div>
+            <div class="inipt"><input type="text" placeholder="请填写账号" id="username"></div>
+        </div>
+        <div class="ipt">
+            <div class="ipttext">密码</div>
+            <div class="inipt"><input type="text" placeholder="请填写密码" id="password"></div>
+        </div>
+    </div>
+    <a href="./sin.html">
+        <div class="point ">
+            已有帐号?点此登录
+        </div>
+    </a>
+    <a href="javascript:;">
+        <div class="onbut">
+            <div class="but" onclick="register()">
+                注册
+            </div>
+        </div>
+    </a>
+</body>
+<script>
+//提交添加
+function register() {
+    const name = document.getElementById('name').value;
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    const data = JSON.stringify({
+        "name": name,
+        "username": username,
+        "password": password,
+
+    });
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", "http://1.12.74.230/api/user");
+    xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.addEventListener("readystatechange", function () {
+        if (this.readyState === 4) {
+            var response = JSON.parse(xhr.response);
+            alert(response.msg);
+            if( response.msg== "新建用户成功"){
+                window.location.href = './index.html'
+            }
+        }
+    });
+    xhr.send(data);
+}
+</script>
+
+</html>

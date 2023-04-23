@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FBFBFB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="50dp"
+        android:paddingBottom="8dp"
+        android:background="#FBFBFB">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/xui_ic_navigation_back_white">
+        </ImageView>
+
+        <LinearLayout
+            android:id="@+id/search_view"
+            android:layout_marginRight="16dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_view_bg"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/icon_action_query">
+            </ImageView>
+
+            <EditText
+                android:id="@+id/edit_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:textColorHint="#CAFFFFFF"
+                android:hint="搜索">
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/aaa_search_btn_bg">
+
+            <TextView
+                android:id="@+id/search_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#D0FFFFFF"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="搜索">
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/include_recycler_view_refresh"></include>
+
+</LinearLayout>

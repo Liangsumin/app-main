@@ -333,5 +333,3 @@ X*？ | 18.88￥ | 微信
 [![](https://img.shields.io/badge/XUI开源交流3群-1090612354-blue.svg)](https://qm.qq.com/cgi-bin/qm/qr?k=nOY3GGJY-jiwzhQpR8E06G-yrOUsxCP1)
 
 ![](https://s1.ax1x.com/2022/04/27/LbGMJH.jpg)
-
-123

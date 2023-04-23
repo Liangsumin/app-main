@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录页</title>
+</head>
+<link rel="stylesheet" href="../res/css/sin.css">
+
+<body>
+    <div class="logo">
+        <img src="../res/img/wrong.png" alt="">
+    </div>
+    <div class="title">
+        登录
+    </div>
+    <div class="import">
+        <div class="ipt">
+            <div class="ipttext">账号</div>
+            <div class="inipt"><input type="text" placeholder="请填写邮箱" id="username"></div>
+        </div>
+        <div class="ipt">
+            <div class="ipttext">密码</div>
+            <div class="inipt"><input type="text" placeholder="请填写密码" id="password"></div>
+        </div>
+    </div>
+    <a href="./logon.html">
+        <div class="point ">
+            没有账号? 点此注册
+        </div>
+    </a>
+    <a href="javascript:;">
+        <div class="onbut">
+            <div class="but" onclick="sin()">
+                登录
+            </div>
+        </div>
+    </a>
+</body>
+<script>
+
+    function sin(params) {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        const data = JSON.stringify({
+            "username": username,
+            "password": password,
+
+        });
+        var xhr = new XMLHttpRequest();
+        var url = `http://1.12.74.230/user/login${data}`;
+        xhr.open("GET", url, true);
+        xhr.send();
+        xhr.onload = function () {
+            if (xhr.status === 200) {
+                console.log(xhr, "yes");
+                window.location.href = './index.html'
+            }
+            else
+                console.error(xhr, "no");
+        }
+
+    }
+</script>
+
+</html>

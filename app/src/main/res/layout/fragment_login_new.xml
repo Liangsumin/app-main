@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+    <ImageView
+        android:src="@mipmap/ic_close"
+        android:layout_margin="@dimen/margin12"
+        android:layout_width="24dp"
+        android:layout_height="24dp"/>
+    <TextView
+        style="@style/TextStyle.Title"
+        android:layout_width="match_parent"
+        android:layout_marginTop="110dp"
+        android:textColor="@color/login_textView_color"
+        android:text="登 录"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/config_margin_30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/login_textView_color"
+            android:text="邮箱"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:background="@null"
+            android:textColor="@color/login_editText_color"
+            android:hint="请填写邮箱"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/config_margin_12dp"
+        android:background="@color/line_color" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/config_margin_20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/login_textView_color"
+            android:text="密码"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:background="@null"
+            android:textColor="@color/login_editText_color"
+            android:hint="请填写密码"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/config_margin_12dp"
+        android:background="@color/line_color" />
+    <TextView
+        android:text="还没有账号？点此注册"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:textSize="16sp"
+        android:textColor="@color/no_account_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_gravity="center"
+        android:layout_width="175dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="26dp"
+        android:background="@color/no_account_color"
+        android:textSize="20sp"
+        android:text="登录"/>
+</LinearLayout>

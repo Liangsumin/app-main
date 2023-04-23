@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="24dp"
+        android:background="#03A9F4"
+        android:orientation="horizontal"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/xui_ic_navigation_back_white"></ImageView>
+
+        <TextView
+            android:layout_width="367dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="修改用户名        "
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="请输入新的用户名:"
+            android:textSize="18dp" />
+
+        <com.xuexiang.xui.widget.edittext.ClearEditText
+            android:id="@+id/new_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="15dp"
+            android:inputType="text"
+            />
+
+        <Button
+            android:id="@+id/change_username"
+            android:layout_width="81dp"
+            android:layout_height="42dp"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:onClick="click"
+            android:text="保存"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

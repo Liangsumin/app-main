@@ -1,0 +1,140 @@
+package com.xuexiang.xuidemo.fragment;
+
+import static com.xuexiang.xutil.XUtil.runOnUiThread;
+
+
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
+import com.xuexiang.xrouter.annotation.AutoWired;
+import com.xuexiang.xrouter.launcher.XRouter;
+import com.xuexiang.xui.widget.actionbar.TitleBar;
+import com.xuexiang.xuidemo.R;
+import com.xuexiang.xuidemo.adapter.NewsCardViewListAdapter;
+import com.xuexiang.xuidemo.adapter.entity.NewInfo;
+import com.xuexiang.xuidemo.base.BaseFragment;
+import com.xuexiang.xuidemo.utils.HttpCallbackListener;
+import com.xuexiang.xuidemo.utils.HttpUtil;
+import com.yanzhenjie.recyclerview.SwipeRecyclerView;
+
+import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+import butterknife.BindView;
+
+/**
+ * @author XUE
+ * @since 2019/5/9 11:54
+ */
+public class AllPhrase extends BaseFragment {
+
+    private static final String KEY_IS_SPECIAL = "key_is_special";
+
+    @BindView(R.id.recyclerView)
+    SwipeRecyclerView recyclerView;
+    @BindView(R.id.swipe_refresh_layout)
+    SwipeRefreshLayout swipeRefreshLayout;
+
+    private NewsCardViewListAdapter mAdapter;
+
+    private String content;
+
+    @AutoWired(name = KEY_IS_SPECIAL)
+    boolean isSpecial;
+
+    public List<NewInfo> getInfo() {
+
+        JSONObject res = JSON.parseObject(content);
+        JSONObject data = res.getJSONObject("data");
+        int total = data.getIntValue("total");
+        JSONArray records = data.getJSONArray("records");
+        List<NewInfo> list = new ArrayList<>();
+
+        for (int i=0; i<total; i++) {
+            JSONObject record = (JSONObject) records.get(i);
+            list.add(new NewInfo(" ",record.getString("title"))
+                    .setSummary("短语集")
+                    .setPraise(Integer.parseInt(record.getString("likeNum")))
+                    .setComment(Integer.parseInt(record.getString("collectionNum")))
+                    .setImageUrl("https://pic4.zhimg.com/v2-1236d741cbb3aabf5a9910a5e4b73e4c_1200x500.jpg")
+                    .setDetailUrl(record.getString("psid")));
+        }
+
+        return list;
+    }
+
+    @Override
+    protected void initArgs() {
+        XRouter.getInstance().inject(this);
+    }
+
+    @Override
+    protected TitleBar initTitle() {
+        return null;
+    }
+
+    @Override
+    protected int getLayoutId() {
+        return R.layout.include_recycler_view_refresh;
+    }
+
+    @Override
+    protected void initViews() {
+
+        getContent();
+    }
+
+    @Override
+    protected void initListeners() {
+
+    }
+
+    protected void getContent() {
+
+        HashMap<String, String> params = new HashMap<String, String>();
+        try {
+            String url = "http://1.12.74.230:10010/phrase-set/page/1/100";
+            String comurl = HttpUtil.getURLWithParams(url,params);
+            HttpUtil.sendHttpRequest(comurl, new HttpCallbackListener() {
+                @Override
+                public String onFinish(String response) {
+                    System.out.println("susses");
+
+                    runOnUiThread(() -> {
+                        content = response;
+
+                        recyclerView.setLayoutManager(new LinearLayoutManager(recyclerView.getContext()));
+                        recyclerView.setItemAnimator(new DefaultItemAnimator());
+
+                        recyclerView.setAdapter(mAdapter = new NewsCardViewListAdapter());
+
+                        mAdapter.refresh(getInfo());
+
+                        mAdapter.setOnItemClickListener((itemView, item, position) -> openNewPage(Phrase_specific.class,"id",item.getDetailUrl()));
+
+                        swipeRefreshLayout.setEnabled(true);
+                        swipeRefreshLayout.setOnRefreshListener(() -> {
+                            getContent();
+                            swipeRefreshLayout.setRefreshing(false);
+                        });
+                    });
+
+                    return response;
+                }
+
+                @Override
+                public void onError(Exception e) {
+                    System.out.println(e.getMessage());
+                }
+            });
+        } catch (UnsupportedEncodingException e) {
+            throw new RuntimeException(e);
+        }
+    }
+}

@@ -1,0 +1,42 @@
+ninja: Entering directory `D:\fish\new\app-main\app\.cxx\cmake\debug\x86_64'
+[1/18] Building CXX object CMakeFiles/PinyinIme.dir/android/com_android_inputmethod_pinyin_PinyinDecoderService.cpp.o
+[2/18] Building CXX object CMakeFiles/PinyinIme.dir/share/dictbuilder.cpp.o
+[3/18] Building CXX object CMakeFiles/PinyinIme.dir/share/dictlist.cpp.o
+[4/18] Building CXX object CMakeFiles/PinyinIme.dir/share/dicttrie.cpp.o
+[5/18] Building CXX object CMakeFiles/PinyinIme.dir/share/lpicache.cpp.o
+[6/18] Building CXX object CMakeFiles/PinyinIme.dir/share/mystdlib.cpp.o
+[7/18] Building CXX object CMakeFiles/PinyinIme.dir/share/spellingtable.cpp.o
+[8/18] Building CXX object CMakeFiles/PinyinIme.dir/share/searchutility.cpp.o
+[9/18] Building CXX object CMakeFiles/PinyinIme.dir/share/utf16reader.cpp.o
+[10/18] Building CXX object CMakeFiles/PinyinIme.dir/share/pinyinime.cpp.o
+[11/18] Building CXX object CMakeFiles/PinyinIme.dir/share/splparser.cpp.o
+[12/18] Building CXX object CMakeFiles/PinyinIme.dir/share/ngram.cpp.o
+D:/fish/new/app-main/app/src/main/cpp/share/ngram.cpp:115:14: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+             iter_num, changed, delta);
+             ^~~~~~~~
+D:/fish/new/app-main/app/src/main/cpp/share/ngram.cpp:115:24: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+             iter_num, changed, delta);
+                       ^~~~~~~
+2 warnings generated.
+[13/18] Building CXX object CMakeFiles/PinyinIme.dir/share/utf16char.cpp.o
+[14/18] Building CXX object CMakeFiles/PinyinIme.dir/share/matrixsearch.cpp.o
+D:/fish/new/app-main/app/src/main/cpp/share/matrixsearch.cpp:1180:30: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+      printf("[%03d]%d    ", a, lpi_items_[a].psb);
+               ~~~~          ^
+               %03zu
+D:/fish/new/app-main/app/src/main/cpp/share/matrixsearch.cpp:1187:37: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+    printf("--- lpi_total_ = %d\n", lpi_total_);
+                             ~~     ^~~~~~~~~~
+                             %zu
+D:/fish/new/app-main/app/src/main/cpp/share/matrixsearch.cpp:1487:39: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+      printf("--- lpi_total_ = %d\n", lpi_total_);
+                               ~~     ^~~~~~~~~~
+                               %zu
+D:/fish/new/app-main/app/src/main/cpp/share/matrixsearch.cpp:1637:30: warning: format specifies type 'int' but the argument has type 'ime_pinyin::LemmaIdType' (aka 'unsigned long') [-Wformat]
+              mtrx_nd->step, mtrx_nd->id, mtrx_nd->score);
+                             ^~~~~~~~~~~
+4 warnings generated.
+[15/18] Building CXX object CMakeFiles/PinyinIme.dir/share/spellingtrie.cpp.o
+[16/18] Building CXX object CMakeFiles/PinyinIme.dir/share/sync.cpp.o
+[17/18] Building CXX object CMakeFiles/PinyinIme.dir/share/userdict.cpp.o
+[18/18] Linking CXX shared library D:\fish\new\app-main\app\build\intermediates\cmake\debug\obj\x86_64\libPinyinIme.so

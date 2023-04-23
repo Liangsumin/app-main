@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>修改个人信息</title>
+</head>
+<link rel="stylesheet" href="../res/css/revise.css">
+
+<body>
+    <div class="title">
+        <a href="./my.html">
+            <div class="title_img"><img src="../res/img/left.png" alt=""></div>
+        </a>
+        <div class="title_text">修改信息</div>
+        <div></div>
+    </div>
+    <div class="name">
+        <div class="name_text">头像</div>
+        <div class="img">
+            <div class="name_img"><img src="../res/img/img.png" alt=""></div>
+            <div class="name_img2"><img src="../res/img/rigth.png" alt=""></div>
+        </div>
+    </div>
+    <div class="ipts" onclick="gotorevise(1)">
+        <div>用户名</div>
+        <div class="img">
+            <div class="iptin"><input readonly type="text" name="" id="" value="Susie"></div>
+            <div class="name_img2"><img src="../res/img/rigth.png" alt=""></div>
+        </div>
+    </div>
+    <div class="ipts" onclick="gotorevise(2)">
+        <div>性别</div>
+        <div class="img">
+            <div class="iptin"><input readonly type="text" name="" id="" value="女"></div>
+            <div class="name_img2"><img src="../res/img/rigth.png" alt=""></div>
+        </div>
+    </div>
+    <div class="ipts" onclick="gotorevise(3)">
+        <div>联系电话</div>
+        <div class="img">
+            <div class="iptin"><input readonly type="text" name="" id="" value="12345678"></div>
+            <div class="name_img2"><img src="../res/img/rigth.png" alt=""></div>
+        </div>
+    </div>
+    <div class="ipts" style="border: none;" onclick="gotorevise(4)">
+        <div>联系邮箱</div>
+        <div class="img">
+            <div class="iptin"><input readonly type="text" name="" id="" value="123456@qq.com"></div>
+            <div class="name_img2"><img src="../res/img/rigth.png" alt=""></div>
+        </div>
+    </div>
+    <div class="ipts" onclick="window.location.href='./edit/revise_password.html'" style="border: none; margin-top:20px;">
+        <div>修改密码</div>
+        <div class="img">
+            <!-- <div class="iptin"><input type="text" name="" id="" placeholder=""></div> -->
+            <div class="name_img2"><img src="../res/img/rigth.png" alt=""></div>
+        </div>
+    </div>
+</body>
+<script>
+   function gotorevise(item){
+    let id = item;
+    window.location.href='./edit/revise_name.html?data='+ id;
+    }
+    function edit_submit() {
+        const uid = document.getElementById('uid').value;
+        const name = document.getElementById('name').value;
+        const phone = document.getElementById('phone').value;
+        const password = document.getElementById('password').value;
+        const email = document.getElementById('email').value;
+        const gender = document.getElementById('gender').value;
+
+        const data = JSON.stringify({
+            "uid": uid,
+            "name": name,
+            "phone": phone,
+            "password": password,
+            "email": email,
+            "gender": gender
+        });
+
+        const xhr = new XMLHttpRequest();
+
+        xhr.open("PUT", "http://1.12.74.230/api/user");
+        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.addEventListener("readystatechange", function () {
+            if (this.readyState === 4) {
+                var response = JSON.parse(xhr.response);
+                alert(response.msg);
+                window.history.back();
+            }
+        });
+        xhr.send(data);
+    }
+</script>
+
+</html>

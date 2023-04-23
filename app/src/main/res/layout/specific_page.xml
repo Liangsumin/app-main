@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/left">
+        </ImageView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/special_title"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:text="网络购物虽方便 退货退款不轻信"
+        android:layout_marginTop="30px"
+        android:layout_marginBottom="20px"
+        android:layout_marginLeft="64px"
+        android:layout_marginRight="64px"
+        android:textColor="#2B2929"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/special_author"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:text="狐萝卜别卷了 2023-02-28 发表于自习室"
+        android:layout_marginTop="0px"
+        android:layout_marginBottom="30px"
+        android:layout_marginLeft="64px"
+        android:layout_marginRight="64px"
+        android:textColor="#767373"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/special_txt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="64px"
+        android:layout_marginRight="64px"
+        android:text="2021年4月24日，A女士照常在店内工作时，接到一通自称售后客服的电话，称A女士在抖音上购买的化妆品质量不合格，要向A女士作出赔偿。起初，A女士并未理睬就把电话挂了。后来A女士又接到了此类电话，称要给其赔付，对方还给了A女士一个二维码，A女士登录并填写了个人信息及银行卡信息，填完后对方又给A女士发了一个二维码，扫码显示要支付10000元，对方解释称这个钱是个人信息保障金，等下会连同赔偿金一起返回给A女士，随后，A女士轻信并扫码支付了10000元，但迟迟未收到返钱，A女士意识到被骗，遂报警，共计损失价值约10000元。"
+        android:textColor="#323131"
+        android:textSize="17sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:cardElevation="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingTop="8dp"
+            android:gravity="end"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/good_icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/good_grey">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/good_no"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="3dp"
+                android:gravity="center_vertical"
+                android:text="137"
+                android:textSize="17sp"
+                android:textColor="#707070">
+            </TextView>
+
+            <ImageView
+                android:id="@+id/favorites_icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/favorites_grey">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/favorites_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="3dp"
+                android:gravity="center_vertical"
+                android:text="137"
+                android:textSize="17sp"
+                android:textColor="#707070">
+            </TextView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+{
+  "stringTable": {
+    "0": "D:/fish/new/app-main/app/.cxx/cmake/debug/x86_64",
+    "1": "--target=x86_64-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DPinyinIme_EXPORTS -I/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC"
+  },
+  "buildFiles": [
+    "D:\\Android\\Sdk\\ndk\\20.0.5594570\\build\\cmake\\android.toolchain.cmake",
+    "D:\\Android\\Sdk\\ndk\\20.0.5594570\\build\\cmake\\platforms.cmake",
+    "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "D:\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\fish\\new\\app-main\\app\\.cxx\\cmake\\debug\\x86_64\" clean"
+  ],
+  "buildTargetsCommand": "D:\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"D:\\fish\\new\\app-main\\app\\.cxx\\cmake\\debug\\x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "PinyinIme-Debug-x86_64": {
+      "buildCommand": "D:\\Android\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\fish\\new\\app-main\\app\\.cxx\\cmake\\debug\\x86_64\" PinyinIme",
+      "buildType": "debug",
+      "toolchain": "847136952",
+      "abi": "x86_64",
+      "artifactName": "PinyinIme",
+      "files": [
+        {
+          "src": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\android\\com_android_inputmethod_pinyin_PinyinDecoderService.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\dictbuilder.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\dictlist.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\dicttrie.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\lpicache.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\matrixsearch.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\mystdlib.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\ngram.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\pinyinime.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\searchutility.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\spellingtable.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\spellingtrie.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\splparser.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\userdict.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\utf16char.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\utf16reader.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\fish\\new\\app-main\\app\\src\\main\\cpp\\share\\sync.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "D:\\fish\\new\\app-main\\app\\build\\intermediates\\cmake\\debug\\obj\\x86_64\\libPinyinIme.so"
+    }
+  },
+  "toolchains": {
+    "847136952": {
+      "cppCompilerExecutable": "D:\\Android\\Sdk\\ndk\\20.0.5594570\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

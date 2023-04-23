@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <!--    <com.xuexiang.xuidemo.keyboard.IEditText-->
+    <!--        android:id="@+id/edit1"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <com.xuexiang.xuidemo.keyboard.IEditText-->
+    <!--        android:id="@+id/edit2"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/edit1"-->
+    <!--        android:layout_height="wrap_content" />-->
+
+    <TextView
+        android:id="@+id/pinying"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="pingying"
+        android:textSize="15sp"
+        android:textColor="#222222"
+        android:layout_marginLeft="5dp"
+        android:background="#E8E9EA"
+        app:layout_constraintBottom_toTopOf="@+id/keyboard_words"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/keyboard_words"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:scrollbars="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/keyboard_functionbar"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <LinearLayout
+        android:id="@+id/keyboard_functionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:background="#E8E9EA"
+        app:layout_constraintBottom_toTopOf="@+id/keyboardview"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <ImageButton
+            android:id="@+id/button_apps"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1.5"
+            android:background="#E8E9EA"
+            android:src="@drawable/apps_o"
+            android:scaleType="center"
+            android:gravity="center" />
+
+        <ImageButton
+            android:id="@+id/button_knowledge"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1.5"
+            android:background="#E8E9EA"
+            android:src="@drawable/description"
+            android:scaleType="center"
+            android:gravity="center" />
+
+        <ImageButton
+            android:id="@+id/button_add"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1.5"
+            android:background="#E8E9EA"
+            android:src="@drawable/add_o"
+            android:scaleType="center"
+            android:gravity="center" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.5" />
+
+        <Button
+            android:id="@+id/search_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="3.5"
+            android:background="#E8E9EA"
+            android:text="我的案例"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:drawableLeft="@drawable/keyboard_search"
+            android:drawablePadding="4dp"
+            android:padding="4dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.5" />
+
+        <ImageButton
+            android:id="@+id/button_arrowdown"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#E8E9EA"
+            android:src="@drawable/arrow_down"
+            android:scaleType="center"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <com.xuexiang.xuidemo.keyboard.IKeyboardView
+        android:id="@+id/keyboardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#E8E9EA"
+        android:keyTextColor="#000000"
+        android:keyBackground="@drawable/keyboard_button_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
